@@ -1,5 +1,5 @@
 # .gitignore
-.env
+.gemini/.env
 tmp/
 installation_id
 oauth_creds.json
