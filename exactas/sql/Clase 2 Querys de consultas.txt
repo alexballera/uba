@@ -1,0 +1,48 @@
+Querys de consultas
+
+Ver relación entre tablas N:M
+
+select 
+nombre,
+id,
+idpelicula,
+reparto.idactor,
+actores.idactor,
+nombreactor
+from peliculas
+join reparto 
+on reparto.idpelicula = peliculas.id
+join actores 
+on reparto.idactor = actores.idactor
+
+
+Unión N:M ejemplo 2 ahora con los datos relevantes para el analisis
+SELECT 
+peliculas.nombre as tituloPelicula,
+CONCAT(nombreactor, ' ', apellidoactor) AS nombre_completo,
+rol
+from peliculas
+join reparto 
+on reparto.idpelicula = peliculas.id
+join actores 
+on reparto.idactor = actores.idactor
+
+
+
+Consulta en 4 tablas con columna de agregación
+
+
+SELECT 
+    tipopeliculas.genero,
+    peliculas.nombre AS tituloPelicula,
+    SUM(actores.premiosActor) AS totalPremios
+FROM peliculas
+JOIN reparto
+    ON reparto.idPelicula = peliculas.id
+JOIN actores 
+    ON reparto.idActor = actores.idActor
+JOIN tipopeliculas 
+    ON tipopeliculas.idT = peliculas.idTipo
+GROUP BY tipopeliculas.genero, peliculas.nombre
+HAVING tipoPeliculas.genero = 'Crimen'
+order by SUM(actores.premiosActor) desc

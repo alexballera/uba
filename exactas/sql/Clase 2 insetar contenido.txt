@@ -1,0 +1,549 @@
+Clase postgre insetar contenido
+
+-- Insertar géneros de películas
+INSERT INTO TipoPeliculas (idT, Genero) VALUES
+(1, 'Acción'),
+(2, 'Drama'),
+(3, 'Comedia'),
+(4, 'Terror'),
+(5, 'Ciencia Ficción'),
+(6, 'Romance'),
+(7, 'Thriller'),
+(8, 'Aventura'),
+(9, 'Fantasía'),
+(10, 'Animación'),
+(11, 'Crimen'),
+(12, 'Biografía'),
+(13, 'Musical'),
+(14, 'Western'),
+(15, 'Guerra');
+
+-- Insertar actores (135 actores para asegurar variedad en los repartos)
+INSERT INTO Actores (idActor, nombreActor, apellidoActor, edadActor, premiosActor) VALUES
+(1, 'Robert', 'Downey Jr.', 59, 5),
+(2, 'Scarlett', 'Johansson', 40, 3),
+(3, 'Chris', 'Evans', 43, 2),
+(4, 'Leonardo', 'DiCaprio', 50, 8),
+(5, 'Meryl', 'Streep', 75, 12),
+(6, 'Tom', 'Hanks', 68, 9),
+(7, 'Jennifer', 'Lawrence', 34, 4),
+(8, 'Brad', 'Pitt', 61, 6),
+(9, 'Angelina', 'Jolie', 49, 3),
+(10, 'Will', 'Smith', 56, 4),
+(11, 'Emma', 'Stone', 36, 2),
+(12, 'Ryan', 'Gosling', 44, 3),
+(13, 'Amy', 'Adams', 50, 5),
+(14, 'Christian', 'Bale', 51, 7),
+(15, 'Natalie', 'Portman', 43, 4),
+(16, 'Matt', 'Damon', 54, 3),
+(17, 'Sandra', 'Bullock', 60, 4),
+(18, 'George', 'Clooney', 63, 5),
+(19, 'Julia', 'Roberts', 57, 6),
+(20, 'Denzel', 'Washington', 70, 8),
+(21, 'Morgan', 'Freeman', 87, 7),
+(22, 'Samuel', 'Jackson', 76, 3),
+(23, 'Anthony', 'Hopkins', 87, 9),
+(24, 'Al', 'Pacino', 84, 6),
+(25, 'Robert', 'De Niro', 81, 8),
+(26, 'Jack', 'Nicholson', 87, 10),
+(27, 'Joaquin', 'Phoenix', 50, 4),
+(28, 'Oscar', 'Isaac', 45, 2),
+(29, 'Adam', 'Driver', 41, 3),
+(30, 'Timothee', 'Chalamet', 29, 2),
+(31, 'Saoirse', 'Ronan', 30, 3),
+(32, 'Margot', 'Robbie', 34, 4),
+(33, 'Ryan', 'Reynolds', 48, 2),
+(34, 'Blake', 'Lively', 37, 1),
+(35, 'Hugh', 'Jackman', 56, 3),
+(36, 'Anne', 'Hathaway', 42, 4),
+(37, 'Jake', 'Gyllenhaal', 44, 2),
+(38, 'Amy', 'Poehler', 53, 3),
+(39, 'Tina', 'Fey', 54, 4),
+(40, 'Steve', 'Carell', 62, 2),
+(41, 'Jim', 'Carrey', 62, 5),
+(42, 'Robin', 'Williams', 63, 6),
+(43, 'Eddie', 'Murphy', 63, 3),
+(44, 'Chris', 'Rock', 59, 2),
+(45, 'Kevin', 'Hart', 45, 1),
+(46, 'Dwayne', 'Johnson', 52, 2),
+(47, 'Jason', 'Statham', 57, 1),
+(48, 'Vin', 'Diesel', 57, 1),
+(49, 'Paul', 'Walker', 40, 2),
+(50, 'Michelle', 'Rodriguez', 46, 1),
+(51, 'Charlize', 'Theron', 49, 5),
+(52, 'Keanu', 'Reeves', 60, 3),
+(53, 'Sandra', 'Oh', 53, 4),
+(54, 'Lupita', 'Nyongo', 41, 3),
+(55, 'Michael', 'B. Jordan', 38, 2),
+(56, 'Chadwick', 'Boseman', 43, 4),
+(57, 'Viola', 'Davis', 59, 6),
+(58, 'Octavia', 'Spencer', 54, 5),
+(59, 'Mahershala', 'Ali', 50, 4),
+(60, 'Regina', 'King', 54, 3),
+(61, 'Daniel', 'Kaluuya', 35, 2),
+(62, 'LaKeith', 'Stanfield', 33, 1),
+(63, 'Tessa', 'Thompson', 41, 2),
+(64, 'John', 'Boyega', 32, 1),
+(65, 'Daisy', 'Ridley', 32, 1),
+(66, 'Oscar', 'Isaac', 45, 2),
+(67, 'Adam', 'Driver', 41, 3),
+(68, 'Mark', 'Hamill', 73, 4),
+(69, 'Harrison', 'Ford', 82, 5),
+(70, 'Carrie', 'Fisher', 60, 3),
+(71, 'Alec', 'Baldwin', 66, 4),
+(72, 'Steve', 'Martin', 79, 6),
+(73, 'Martin', 'Short', 74, 3),
+(74, 'Bill', 'Murray', 74, 5),
+(75, 'Dan', 'Aykroyd', 72, 2),
+(76, 'Eddie', 'Murphy', 63, 3),
+(77, 'John', 'Candy', 43, 2),
+(78, 'Rick', 'Moranis', 71, 1),
+(79, 'Eugene', 'Levy', 78, 2),
+(80, 'Catherine', 'OHara', 70, 3),
+(81, 'Helena', 'Bonham Carter', 58, 4),
+(82, 'Johnny', 'Depp', 61, 3),
+(83, 'Tim', 'Burton', 66, 5),
+(84, 'Danny', 'Elfman', 71, 4),
+(85, 'Winona', 'Ryder', 53, 2),
+(86, 'Michael', 'Keaton', 73, 4),
+(87, 'Jack', 'Black', 55, 2),
+(88, 'Will', 'Ferrell', 57, 3),
+(89, 'John', 'C. Reilly', 59, 4),
+(90, 'Philip', 'Seymour Hoffman', 46, 7),
+(91, 'Cate', 'Blanchett', 55, 8),
+(92, 'Tilda', 'Swinton', 64, 5),
+(93, 'Ralph', 'Fiennes', 62, 6),
+(94, 'Gary', 'Oldman', 66, 7),
+(95, 'Alan', 'Rickman', 69, 4),
+(96, 'Maggie', 'Smith', 90, 8),
+(97, 'Helen', 'Mirren', 79, 9),
+(98, 'Judi', 'Dench', 90, 7),
+(99, 'Ian', 'McKellen', 85, 6),
+(100, 'Patrick', 'Stewart', 84, 5),
+(101, 'Benedict', 'Cumberbatch', 48, 4),
+(102, 'Martin', 'Freeman', 53, 3),
+(103, 'Tom', 'Hiddleston', 43, 2),
+(104, 'Chris', 'Hemsworth', 41, 1),
+(105, 'Mark', 'Ruffalo', 57, 3),
+(106, 'Jeremy', 'Renner', 54, 2),
+(107, 'Elizabeth', 'Olsen', 35, 1),
+(108, 'Paul', 'Rudd', 55, 2),
+(109, 'Evangeline', 'Lilly', 45, 1),
+(110, 'Michael', 'Douglas', 80, 6),
+(111, 'Michelle', 'Pfeiffer', 66, 4),
+(112, 'Laurence', 'Fishburne', 63, 3),
+(113, 'Angela', 'Bassett', 66, 4),
+(114, 'Forest', 'Whitaker', 63, 5),
+(115, 'Idris', 'Elba', 52, 3),
+(116, 'Chiwetel', 'Ejiofor', 47, 4),
+(117, 'Lupita', 'Nyongo', 41, 3),
+(118, 'Daniel', 'Craig', 56, 2),
+(119, 'Rami', 'Malek', 43, 4),
+(120, 'Lady', 'Gaga', 38, 3),
+(121, 'Bradley', 'Cooper', 50, 5),
+(122, 'Emma', 'Watson', 34, 2),
+(123, 'Daniel', 'Radcliffe', 35, 1),
+(124, 'Rupert', 'Grint', 36, 1),
+(125, 'Elijah', 'Wood', 44, 2),
+(126, 'Ian', 'McKellen', 85, 6),
+(127, 'Viggo', 'Mortensen', 66, 4),
+(128, 'Orlando', 'Bloom', 47, 1),
+(129, 'Sean', 'Bean', 65, 3),
+(130, 'John', 'Rhys-Davies', 80, 2),
+(131, 'Billy', 'Boyd', 56, 1),
+(132, 'Dominic', 'Monaghan', 48, 1),
+(133, 'Cate', 'Blanchett', 55, 8),
+(134, 'Liv', 'Tyler', 47, 1),
+(135, 'Christopher', 'Lee', 93, 5);
+
+-- Insertar películas
+INSERT INTO Peliculas (id, nombre, sinapsis, director, fechaDeEstreno, idTipo) VALUES
+(1, 'Los Vengadores', 'Un grupo de superhéroes se une para salvar el mundo de una invasión alienígena.', 'Joss Whedon', '2012-05-04', 1),
+(2, 'Titanic', 'Una historia de amor épica a bordo del barco más famoso de la historia.', 'James Cameron', '1997-12-19', 6),
+(3, 'El Padrino', 'La saga de una familia criminal italiana en América.', 'Francis Ford Coppola', '1972-03-24', 11),
+(4, 'Forrest Gump', 'La extraordinaria vida de un hombre simple pero extraordinario.', 'Robert Zemeckis', '1994-07-06', 2),
+(5, 'El Exorcista', 'Una niña es poseída por fuerzas demoníacas.', 'William Friedkin', '1973-12-26', 4),
+(6, 'Pulp Fiction', 'Historias entrelazadas del mundo criminal de Los Ángeles.', 'Quentin Tarantino', '1994-10-14', 11),
+(7, 'Matrix', 'Un hacker descubre que la realidad es una simulación.', 'Lana Wachowski', '1999-03-31', 5),
+(8, 'El Señor de los Anillos: La Comunidad del Anillo', 'Un hobbit debe destruir un anillo mágico para salvar la Tierra Media.', 'Peter Jackson', '2001-12-19', 9),
+(9, 'Star Wars: Una Nueva Esperanza', 'La rebelión lucha contra el Imperio Galáctico.', 'George Lucas', '1977-05-25', 5),
+(10, 'Casablanca', 'Un romance en tiempos de guerra en el Marruecos francés.', 'Michael Curtiz', '1942-11-26', 6),
+(11, 'El Rey León', 'Un joven león debe reclamar su lugar como rey.', 'Roger Allers', '1994-06-24', 10),
+(12, 'Gladiator', 'Un general romano busca venganza después de ser traicionado.', 'Ridley Scott', '2000-05-05', 1),
+(13, 'La La Land', 'Un músico y una actriz persiguen sus sueños en Los Ángeles.', 'Damien Chazelle', '2016-12-09', 13),
+(14, 'Joker', 'El origen del villano más icónico de Gotham City.', 'Todd Phillips', '2019-10-04', 7),
+(15, 'Avengers: Endgame', 'Los héroes supervivientes intentan deshacer el daño de Thanos.', 'Anthony Russo', '2019-04-26', 1),
+(16, 'El Silencio de los Corderos', 'Un agente del FBI busca la ayuda de Hannibal Lecter.', 'Jonathan Demme', '1991-02-14', 7),
+(17, 'E.T. el Extraterrestre', 'Un niño hace amistad con un alienígena perdido.', 'Steven Spielberg', '1982-06-11', 5),
+(18, 'Ciudadano Kane', 'La vida de un magnate de los medios contada a través de flashbacks.', 'Orson Welles', '1941-05-01', 2),
+(19, 'El Club de la Pelea', 'Un hombre forma un club de peleas underground.', 'David Fincher', '1999-10-15', 7),
+(20, 'Inception', 'Un ladrón que roba secretos del subconsciente acepta una misión imposible.', 'Christopher Nolan', '2010-07-16', 5),
+(21, 'Django Desencadenado', 'Un esclavo liberado busca rescatar a su esposa.', 'Quentin Tarantino', '2012-12-25', 14),
+(22, 'La Lista de Schindler', 'La historia real de Oskar Schindler salvando vidas judías.', 'Steven Spielberg', '1993-12-15', 12),
+(23, 'El Bueno, el Malo y el Feo', 'Tres hombres buscan un tesoro enterrado durante la Guerra Civil.', 'Sergio Leone', '1966-12-23', 14),
+(24, 'Goodfellas', 'La vida en la mafia vista desde dentro.', 'Martin Scorsese', '1990-09-19', 11),
+(25, 'Reservoir Dogs', 'Un atraco sale mal y los ladrones se vuelven unos contra otros.', 'Quentin Tarantino', '1992-10-23', 11),
+(26, 'Alien', 'Una tripulación espacial enfrenta a una criatura mortal.', 'Ridley Scott', '1979-05-25', 4),
+(27, 'Blade Runner', 'Un detective caza replicantes en un futuro distópico.', 'Ridley Scott', '1982-06-25', 5),
+(28, 'Terminator 2', 'Un cyborg del futuro protege al líder de la resistencia.', 'James Cameron', '1991-07-03', 1),
+(29, 'Volver al Futuro', 'Un adolescente viaja accidentalmente al pasado.', 'Robert Zemeckis', '1985-07-03', 5),
+(30, 'Los Cazafantasmas', 'Un grupo de científicos combate fantasmas en Nueva York.', 'Ivan Reitman', '1984-06-08', 3),
+(31, 'La Bella y la Bestia', 'Una joven se enamora de una bestia maldita.', 'Gary Trousdale', '1991-11-22', 10),
+(32, 'Toy Story', 'Los juguetes de un niño cobran vida cuando él no está.', 'John Lasseter', '1995-11-22', 10),
+(33, 'El Sexto Sentido', 'Un niño puede ver fantasmas y busca ayuda de un psicólogo.', 'M. Night Shyamalan', '1999-08-06', 7),
+(34, 'Seven', 'Dos detectives persiguen a un asesino serial que mata según los pecados capitales.', 'David Fincher', '1995-09-22', 7),
+(35, 'Heat', 'Un detective obsesivo persigue a un ladrón profesional.', 'Michael Mann', '1995-12-15', 1),
+(36, 'Casino', 'La historia de las Vegas y la mafia en los años 70.', 'Martin Scorsese', '1995-11-22', 11),
+(37, 'Scarface', 'El ascenso y caída de un narcotraficante cubano en Miami.', 'Brian De Palma', '1983-12-09', 11),
+(38, 'El Padrino II', 'La continuación de la saga Corleone.', 'Francis Ford Coppola', '1974-12-20', 11),
+(39, 'Apocalypse Now', 'Un capitán del ejército viaja por Vietnam en una misión secreta.', 'Francis Ford Coppola', '1979-08-15', 15),
+(40, 'Full Metal Jacket', 'La brutal experiencia de los marines en Vietnam.', 'Stanley Kubrick', '1987-06-26', 15),
+(41, 'Saving Private Ryan', 'Soldados americanos buscan a un paracaidista perdido en Normandía.', 'Steven Spielberg', '1998-07-24', 15),
+(42, 'El Resplandor', 'Un hombre se vuelve loco mientras cuida un hotel aislado.', 'Stanley Kubrick', '1980-05-23', 4),
+(43, 'Psicosis', 'Una mujer en fuga se hospeda en un motel regentado por un hombre perturbado.', 'Alfred Hitchcock', '1960-06-16', 4),
+(44, 'Los Pájaros', 'Los pájaros atacan misteriosamente a los habitantes de un pueblo.', 'Alfred Hitchcock', '1963-03-28', 4),
+(45, 'Rocky', 'Un boxeador amateur consigue la oportunidad de pelear por el título mundial.', 'John G. Avildsen', '1976-11-21', 2);
+
+-- Insertar repartos (cada película tendrá exactamente 3 actores)
+INSERT INTO Reparto (idPelicula, idActor, rol) VALUES
+-- Los Vengadores (1)
+(1, 1, 'Tony Stark/Iron Man'),
+(1, 2, 'Natasha Romanoff/Black Widow'),
+(1, 3, 'Steve Rogers/Captain America'),
+
+-- Titanic (2)
+(2, 4, 'Jack Dawson'),
+(2, 5, 'Rose DeWitt Bukater'),
+(2, 6, 'Thomas Andrews'),
+
+-- El Padrino (3)
+(3, 24, 'Michael Corleone'),
+(3, 25, 'Vito Corleone'),
+(3, 26, 'Tom Hagen'),
+
+-- Forrest Gump (4)
+(4, 6, 'Forrest Gump'),
+(4, 7, 'Jenny Curran'),
+(4, 8, 'Lieutenant Dan Taylor'),
+
+-- El Exorcista (5)
+(5, 23, 'Father Merrin'),
+(5, 9, 'Chris MacNeil'),
+(5, 10, 'Father Karras'),
+
+-- Pulp Fiction (6)
+(6, 22, 'Jules Winnfield'),
+(6, 11, 'Mia Wallace'),
+(6, 12, 'Vincent Vega'),
+
+-- Matrix (7)
+(7, 52, 'Neo'),
+(7, 51, 'Trinity'),
+(7, 112, 'Morpheus'),
+
+-- El Señor de los Anillos: La Comunidad del Anillo (8)
+(8, 125, 'Frodo Baggins'),
+(8, 126, 'Gandalf'),
+(8, 127, 'Aragorn'),
+
+-- Star Wars: Una Nueva Esperanza (9)
+(9, 68, 'Luke Skywalker'),
+(9, 69, 'Han Solo'),
+(9, 70, 'Princess Leia'),
+
+-- Casablanca (10)
+(10, 18, 'Rick Blaine'),
+(10, 19, 'Ilsa Lund'),
+(10, 20, 'Victor Laszlo'),
+
+-- El Rey León (11)
+(11, 21, 'Mufasa'),
+(11, 43, 'Timon'),
+(11, 44, 'Pumbaa'),
+
+-- Gladiator (12)
+(12, 93, 'Maximus'),
+(12, 27, 'Commodus'),
+(12, 94, 'Proximo'),
+
+-- La La Land (13)
+(13, 12, 'Sebastian'),
+(13, 11, 'Mia'),
+(13, 13, 'Laura'),
+
+-- Joker (14)
+(14, 27, 'Arthur Fleck/Joker'),
+(14, 25, 'Murray Franklin'),
+(14, 57, 'Penny Fleck'),
+
+-- Avengers: Endgame (15)
+(15, 1, 'Tony Stark/Iron Man'),
+(15, 104, 'Thor'),
+(15, 105, 'Bruce Banner/Hulk'),
+
+-- El Silencio de los Corderos (16)
+(16, 23, 'Dr. Hannibal Lecter'),
+(16, 54, 'Clarice Starling'),
+(16, 15, 'Catherine Martin'),
+
+-- E.T. el Extraterrestre (17)
+(17, 16, 'Elliott'),
+(17, 17, 'Mary'),
+(17, 18, 'Keys'),
+
+-- Ciudadano Kane (18)
+(18, 26, 'Charles Foster Kane'),
+(18, 19, 'Susan Alexander Kane'),
+(18, 20, 'Jedediah Leland'),
+
+-- El Club de la Pelea (19)
+(19, 8, 'Tyler Durden'),
+(19, 14, 'Narrator'),
+(19, 81, 'Marla Singer'),
+
+-- Inception (20)
+(20, 4, 'Dom Cobb'),
+(20, 32, 'Mal'),
+(20, 28, 'Arthur'),
+
+-- Django Desencadenado (21)
+(21, 59, 'Django'),
+(21, 4, 'Calvin Candie'),
+(21, 23, 'Dr. King Schultz'),
+
+-- La Lista de Schindler (22)
+(22, 93, 'Oskar Schindler'),
+(22, 95, 'Amon Goeth'),
+(22, 15, 'Helen Hirsch'),
+
+-- El Bueno, el Malo y el Feo (23)
+(23, 14, 'Man with No Name'),
+(23, 115, 'Angel Eyes'),
+(23, 116, 'Tuco'),
+
+-- Goodfellas (24)
+(24, 25, 'Jimmy Conway'),
+(24, 24, 'Henry Hill'),
+(24, 26, 'Tommy DeVito'),
+
+-- Reservoir Dogs (25)
+(25, 22, 'Jules'),
+(25, 33, 'Mr. Orange'),
+(25, 34, 'Mr. White'),
+
+-- Alien (26)
+(26, 51, 'Ellen Ripley'),
+(26, 82, 'Dallas'),
+(26, 36, 'Lambert'),
+
+-- Blade Runner (27)
+(27, 69, 'Rick Deckard'),
+(27, 70, 'Rachael'),
+(27, 94, 'Roy Batty'),
+
+-- Terminator 2 (28)
+(28, 46, 'Terminator'),
+(28, 7, 'Sarah Connor'),
+(28, 35, 'John Connor'),
+
+-- Volver al Futuro (29)
+(29, 86, 'Marty McFly'),
+(29, 90, 'Doc Brown'),
+(29, 87, 'George McFly'),
+
+-- Los Cazafantasmas (30)
+(30, 74, 'Peter Venkman'),
+(30, 75, 'Ray Stantz'),
+(30, 76, 'Winston Zeddemore'),
+
+-- La Bella y la Bestia (31)
+(31, 36, 'Belle'),
+(31, 82, 'Beast'),
+(31, 37, 'Gaston'),
+
+-- Toy Story (32)
+(32, 6, 'Woody'),
+(32, 87, 'Buzz Lightyear'),
+(32, 38, 'Bo Peep'),
+
+-- El Sexto Sentido (33)
+(33, 14, 'Malcolm Crowe'),
+(33, 39, 'Lynn Sear'),
+(33, 40, 'Cole Sear'),
+
+-- Seven (34)
+(34, 8, 'Detective Mills'),
+(34, 21, 'Detective Somerset'),
+(34, 29, 'John Doe'),
+
+-- Heat (35)
+(35, 24, 'Neil McCauley'),
+(35, 25, 'Vincent Hanna'),
+(35, 9, 'Eady'),
+
+-- Casino (36)
+(36, 25, 'Sam Rothstein'),
+(36, 24, 'Nicky Santoro'),
+(36, 51, 'Ginger McKenna'),
+
+-- Scarface (37)
+(37, 24, 'Tony Montana'),
+(37, 58, 'Elvira'),
+(37, 59, 'Manny'),
+
+-- El Padrino II (38)
+(38, 24, 'Michael Corleone'),
+(38, 25, 'Vito Corleone'),
+(38, 94, 'Tom Hagen'),
+
+-- Apocalypse Now (39)
+(39, 8, 'Captain Willard'),
+(39, 25, 'Colonel Kurtz'),
+(39, 60, 'Chef'),
+
+-- Full Metal Jacket (40)
+(40, 61, 'Private Joker'),
+(40, 62, 'Gunnery Sergeant Hartman'),
+(40, 63, 'Private Pyle'),
+
+-- Saving Private Ryan (41)
+(41, 6, 'Captain Miller'),
+(41, 16, 'Private Ryan'),
+(41, 64, 'Sergeant Horvath'),
+
+-- El Resplandor (42)
+(42, 26, 'Jack Torrance'),
+(42, 85, 'Wendy Torrance'),
+(42, 65, 'Danny Torrance'),
+
+-- Psicosis (43)
+(43, 23, 'Norman Bates'),
+(43, 66, 'Marion Crane'),
+(43, 67, 'Sam Loomis'),
+
+-- Los Pájaros (44)
+(44, 92, 'Melanie Daniels'),
+(44, 91, 'Mitch Brenner'),
+(44, 96, 'Lydia Brenner'),
+
+-- Rocky (45)
+(45, 8, 'Rocky Balboa'),
+(45, 97, 'Adrian'),
+(45, 98, 'Apollo Creed');
+
+-- Insertar 10 películas adicionales reutilizando actores existentes
+INSERT INTO Peliculas (id, nombre, sinapsis, director, fechaDeEstreno, idTipo) VALUES
+(46, 'Iron Man', 'Un millonario genio construye una armadura para convertirse en superhéroe.', 'Jon Favreau', '2008-05-02', 1),
+(47, 'Avengers: Infinity War', 'Los Vengadores enfrentan a Thanos en una batalla épica por las Gemas del Infinito.', 'Anthony Russo', '2018-04-27', 1),
+(48, 'Captain America: Civil War', 'Los Vengadores se dividen debido a diferencias políticas.', 'Anthony Russo', '2016-05-06', 1),
+(49, 'Once Upon a Time in Hollywood', 'La historia de un actor en decadencia y su doble en el Hollywood de 1969.', 'Quentin Tarantino', '2019-07-26', 2),
+(50, 'Oceans Eleven', 'Once ladrones planean el mayor atraco de la historia de Las Vegas.', 'Steven Soderbergh', '2001-12-07', 7),
+(51, 'The Departed', 'Un policía infiltrado y un criminal infiltrado intentan descubrirse mutuamente.', 'Martin Scorsese', '2006-10-06', 7),
+(52, 'A Star is Born', 'Un músico veterano ayuda a una joven cantante a encontrar la fama.', 'Bradley Cooper', '2018-10-05', 6),
+(53, 'The Revenant', 'Un explorador lucha por sobrevivir después de ser atacado por un oso.', 'Alejandro G. Iñárritu', '2015-12-25', 8),
+(54, 'John Wick', 'Un asesino retirado busca venganza por la muerte de su perro.', 'Chad Stahelski', '2014-10-24', 1),
+(55, 'Mad Max: Fury Road', 'En un futuro post-apocalíptico, Max ayuda a una guerrera rebelde.', 'George Miller', '2015-05-15', 1);
+
+-- Insertar repartos para las 10 películas adicionales (reutilizando actores)
+INSERT INTO Reparto (idPelicula, idActor, rol) VALUES
+-- Iron Man (46) - Reutilizando Robert Downey Jr., Samuel Jackson, y Scarlett Johansson
+(46, 1, 'Tony Stark/Iron Man'),
+(46, 22, 'Nick Fury'),
+(46, 2, 'Natasha Romanoff'),
+
+-- Avengers: Infinity War (47) - Reutilizando varios actores de Marvel
+(47, 1, 'Tony Stark/Iron Man'),
+(47, 3, 'Steve Rogers/Captain America'),
+(47, 104, 'Thor'),
+
+-- Captain America: Civil War (48) - Reutilizando actores de Marvel
+(48, 3, 'Steve Rogers/Captain America'),
+(48, 1, 'Tony Stark/Iron Man'),
+(48, 2, 'Natasha Romanoff/Black Widow'),
+
+-- Once Upon a Time in Hollywood (49) - Reutilizando Leonardo DiCaprio, Brad Pitt, y Margot Robbie
+(49, 4, 'Rick Dalton'),
+(49, 8, 'Cliff Booth'),
+(49, 32, 'Sharon Tate'),
+
+-- Ocean's Eleven (50) - Reutilizando George Clooney, Brad Pitt, y Matt Damon
+(50, 18, 'Danny Ocean'),
+(50, 8, 'Rusty Ryan'),
+(50, 16, 'Linus Caldwell'),
+
+-- The Departed (51) - Reutilizando Leonardo DiCaprio, Matt Damon, y Jack Nicholson
+(51, 4, 'Billy Costigan'),
+(51, 16, 'Colin Sullivan'),
+(51, 26, 'Frank Costello'),
+
+-- A Star is Born (52) - Reutilizando Bradley Cooper y Lady Gaga
+(52, 121, 'Jackson Maine'),
+(52, 120, 'Ally'),
+(52, 17, 'Rez'),
+
+-- The Revenant (53) - Reutilizando Leonardo DiCaprio, Tom Hardy, y Will Poulter
+(53, 4, 'Hugh Glass'),
+(53, 14, 'John Fitzgerald'),
+(53, 20, 'Captain Andrew Henry'),
+
+-- John Wick (54) - Reutilizando Keanu Reeves, Willem Dafoe, y Theon Greyjoy
+(54, 52, 'John Wick'),
+(54, 115, 'Marcus'),
+(54, 59, 'Iosef Tarasov'),
+
+-- Mad Max: Fury Road (55) - Reutilizando Charlize Theron, Tom Hardy, y Nicholas Hoult
+(55, 51, 'Imperator Furiosa'),
+(55, 14, 'Max Rockatansky'),
+(55, 61, 'Nux');
+
+
+INSERT INTO RecaudacionYAsistencia (idRYA, recaudacion, asistencia, idPelicula) VALUES
+(11, 10000000.00, 500000, 1),
+(12, 8500000.00, 430000, 2),
+(13, 9200000.00, 480000, 3),
+(14, 3000000.00, 250000, 4),
+(15, 11000000.00, 550000, 5),
+(16, 9800000.00, 510000, 6),
+(17, 7400000.00, 400000, 7),
+(18, 12000000.00, 580000, 8),
+(19, 9500000.00, 470000, 9),
+(20, 8700000.00, 430000, 10),
+
+(21, 10500000.00, 520000, 11),
+(22, 9000000.00, 460000, 12),
+(23, 7600000.00, 390000, 13),
+(24, 6700000.00, 360000, 14),
+(25, 8000000.00, 410000, 15),
+(26, 8800000.00, 420000, 16),
+(27, 9900000.00, 480000, 17),
+(28, 10200000.00, 500000, 18),
+(29, 9400000.00, 470000, 19),
+(30, 10100000.00, 490000, 20),
+
+(31, 9300000.00, 460000, 21),
+(32, 8900000.00, 440000, 22),
+(33, 7800000.00, 420000, 23),
+(34, 8200000.00, 440000, 24),
+(35, 8700000.00, 430000, 25),
+(36, 9700000.00, 470000, 26),
+(37, 9400000.00, 450000, 27),
+(38, 10800000.00, 510000, 28),
+(39, 8600000.00, 430000, 29),
+(40, 9500000.00, 460000, 30),
+
+(41, 8800000.00, 420000, 31),
+(42, 9600000.00, 480000, 32),
+(43, 10100000.00, 500000, 33),
+(44, 8700000.00, 440000, 34),
+(45, 9200000.00, 470000, 35),
+(46, 9800000.00, 490000, 36),
+(47, 8900000.00, 430000, 37),
+(48, 9900000.00, 470000, 38),
+(49, 10000000.00, 500000, 39),
+(50, 11000000.00, 520000, 40),
+
+(51, 8500000.00, 430000, 41),
+(52, 8800000.00, 440000, 42),
+(53, 9100000.00, 460000, 43),
+(54, 8700000.00, 420000, 44),
+(55, 9400000.00, 470000, 45);
